@@ -137,13 +137,13 @@ class GaussIntegrator(IntegratorBase):
         self.Z[0, :, :] = np.array(Z_new)
 
         # save previous vector
-        self.y_prev = np.array(self.y)
+        self.y_prev = self.y.copy()
 
         # Make a step using Gauss method
         for i in range(self.s):
             self.y += dt * self.b[i] * self.F[:, i]
 
-        return (self.y, t1)
+        return self.y, t1
 
     def step(self, *args):
         return self.run(*args)
