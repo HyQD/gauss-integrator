@@ -41,10 +41,10 @@ class GaussIntegrator(IntegratorBase):
         self.rhs_evals = 0
         self.success = 1
 
-    def eval_rhs(self, y, t):
+    def eval_rhs(self, t, y):
         self.rhs_evals += 1
 
-        return self.rhs(y, t)
+        return self.rhs(t, y)
 
     def Z_solve(self, y, Z0, t, dt):
         """Method solving the problem
@@ -77,7 +77,7 @@ class GaussIntegrator(IntegratorBase):
         for j in range(self.maxit):
             F = np.zeros((self.n, self.s), dtype=np.complex128)
             for i in range(self.s):
-                F[:, i] = self.eval_rhs(y + Z[:, i], t + dt * self.c[i])
+                F[:, i] = self.eval_rhs(t + dt * self.c[i], y + Z[:, i])
 
             Z_new = dt * np.matmul(F, self.a.transpose())
             R = Z - Z_new
