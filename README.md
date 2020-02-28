@@ -9,5 +9,5 @@ pip install . -U
 ```
 Alternatively, using ssh from git with
 ```bash
-pip install git+ssh://git@github.com:Schoyen/gauss-integrator.git -U
+pip install git+ssh://git@github.com/Schoyen/gauss-integrator.git -U
 ```
