@@ -130,3 +130,6 @@ dmypy.json
 
 # Pipfile lock
 Pipfile.lock
+
+# Vim swap
+*.swp
