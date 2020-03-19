@@ -1,5 +1,8 @@
 # Gauss integrator
 
+[![Build Status](https://travis-ci.com/Schoyen/gauss-integrator.svg?token=MvgH7xLNL8iVfczJpp8Q&branch=master)](https://travis-ci.com/Schoyen/gauss-integrator)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+
 This repository implements the Gauss-Legendre integrator into the framework of Scipy.
 
 ## Installation

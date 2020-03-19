@@ -8,6 +8,3 @@ verify_ssl = true
 [packages]
 pytest = "*"
 black = "*"
-
-[requires]
-python_version = "3.7"
