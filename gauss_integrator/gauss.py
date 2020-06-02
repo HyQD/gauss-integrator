@@ -8,8 +8,7 @@ from scipy.integrate._ode import IntegratorBase
 class GaussIntegrator(IntegratorBase):
     """Gaussian Quadrature
 
-    Simple implementation of a symplectic Gauss integrator, order 4 and 6 (s=2
-    and s=3).
+    Simple implementation of a symplectic Gauss integrator, any order.
 
     Note, this is a modified code recieved from Simen Kvaal and Thomas Bondo
     Pedersen.
