@@ -4,5 +4,8 @@ setup(
     name="gauss-integrator",
     version="0.1.2",
     packages=find_packages(),
-    install_requires=["numpy", "scipy",],
+    install_requires=[
+        "numpy",
+        "scipy",
+    ],
 )

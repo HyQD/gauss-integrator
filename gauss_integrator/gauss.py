@@ -96,7 +96,7 @@ class GaussIntegrator(IntegratorBase):
         for i in range(self.s):
             for k in range(self.s):
                 U[i, k] = (1 + self.c[i]) ** (k + 1) / (k + 1)
-        U[:, self.s] = self.b @ (self.c ** self.s) + self.a @ (
+        U[:, self.s] = self.b @ (self.c**self.s) + self.a @ (
             (self.c + 1) ** self.s
         )
 
